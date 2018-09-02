@@ -1,0 +1,12 @@
+
+/**
+da instrucoes para o compilador typescript
+*/
+{
+    "compilerOptions":{
+     "target": "es5",
+     "module": "commonjs",
+     "sourceMap": true
+    }
+
+}
