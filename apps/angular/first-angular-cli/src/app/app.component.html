@@ -1,0 +1,32 @@
+<h1>{{title}}</h1>
+<br />
+<app-task-list></app-task-list>
+<br/>
+{{user | json}}
+<br/>
+{{upperText | uppercase}}
+<br/>
+{{lowerText | lowercase}}
+<br/>
+{{percentValue | percent}}
+<br/>
+{{date}}
+<br/>
+{{date | date: 'dd-MM-yyyy'}}
+<br/>
+{{money | currency}}
+<br/>
+<div *ngIf="isAdmin">
+  Administrador
+</div>
+<br/>
+<div *ngIf="!isAdmin">
+  Usuario
+</div>
+<br/>
+<div [ngSwitch]="profile">
+  <p *ngSwitchCase="1">You can read</p>
+  <p *ngSwitchCase="2">You can read & write</p>
+  <p *ngSwitchDefault>Go back, please</p>
+
+</div>

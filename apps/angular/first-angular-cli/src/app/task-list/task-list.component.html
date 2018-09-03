@@ -1,0 +1,18 @@
+
+<input type="text" [(ngModel)]="task">
+<button type="button" (click)="add()">Add to List</button>
+
+<ul>
+  <li *ngFor="let item of tasks" [innerHtml]="item">
+    {{item}}
+  </li>
+
+</ul>
+<br/>
+<div [hidden]="!isAdmin">
+  Administrador
+</div>
+
+<div [hidden]="isAdmin">
+  Common User
+</div>
