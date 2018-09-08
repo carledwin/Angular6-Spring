@@ -1,0 +1,537 @@
+{
+	"id": "38574633-b29d-6b3c-27d6-472106a81423",
+	"name": "Projeto - HelpDesk",
+	"description": "",
+	"order": [
+		"e2c89ca4-d17e-5c7c-b1ae-e0a097be1769",
+		"3ee361a9-a1e9-287e-0b08-935b928cef99",
+		"1983d25e-ee38-53ff-e23e-2f2ce8057ea1",
+		"f7fb8312-5f18-ea18-a41c-7da3a275bd6f",
+		"4e0876f2-66c1-68e2-4b5f-a0f0cfd37324",
+		"80d56e27-0f21-f38d-d91b-aa670705072a",
+		"7c1cc857-2f5c-0098-9a05-0d8af559e44a",
+		"d1ef2753-9031-f142-0717-29e46ca2299c",
+		"c14a39f6-b3ba-38ae-3136-8983f53b4031",
+		"f943cf47-a984-a99e-03a9-409211c93dbe",
+		"6317f382-bcee-c48a-45ef-86b944b562a0",
+		"0c32f484-438b-144e-f73b-598238af0a70",
+		"901f38b4-a354-8e58-335f-095718d92a11",
+		"3315c755-3f51-a9e4-0f84-6a4f107f766d",
+		"20d352c9-3200-9844-a39a-57bf4ab7f563"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1535954206939,
+	"owner": "1654782",
+	"public": false,
+	"requests": [
+		{
+			"id": "0c32f484-438b-144e-f73b-598238af0a70",
+			"headers": "Content-Type: application/json\nAuthorization: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjdXN0b21lcjFAaGVscGRlc2suY29tIiwiY3JlYXRlZCI6MTUzNjM2MDY4Mzg0MywiZXhwIjoxNTM2OTY1NDgzfQ.o7ToiDkne7CTFdIe_RNvE-VAMwr2H49eOdi8dTIMKDO_I3MOcxP2NTvhVXEILtsTeZbjNfeC2cgK_iYrtnDpAg\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjdXN0b21lcjFAaGVscGRlc2suY29tIiwiY3JlYXRlZCI6MTUzNjM2MDY4Mzg0MywiZXhwIjoxNTM2OTY1NDgzfQ.o7ToiDkne7CTFdIe_RNvE-VAMwr2H49eOdi8dTIMKDO_I3MOcxP2NTvhVXEILtsTeZbjNfeC2cgK_iYrtnDpAg",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8085/api/ticket/3/3",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1536365590737,
+			"name": "GET - CUSTOMER - Consulta todos Tickets paginado 0 10",
+			"description": "",
+			"collectionId": "38574633-b29d-6b3c-27d6-472106a81423",
+			"responses": [],
+			"rawModeData": ""
+		},
+		{
+			"id": "1983d25e-ee38-53ff-e23e-2f2ce8057ea1",
+			"headers": "Content-Type: application/json\nAuthorization: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwZWdhdG9rZW5AaGVscGRlc2suY29tIiwiY3JlYXRlZCI6MTUzNjAzMTM5MzgyMSwiZXhwIjoxNTM2NjM2MTkzfQ.Fw1aYQmwAgtrYKBYr4pTJB4kbVh9P6aNRKO1vgr8fPEaH5tx5aoZArrtrxYre3Koya6ZdjUFtuIZFVqhWruTgg\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwZWdhdG9rZW5AaGVscGRlc2suY29tIiwiY3JlYXRlZCI6MTUzNjAzMTM5MzgyMSwiZXhwIjoxNTM2NjM2MTkzfQ.Fw1aYQmwAgtrYKBYr4pTJB4kbVh9P6aNRKO1vgr8fPEaH5tx5aoZArrtrxYre3Koya6ZdjUFtuIZFVqhWruTgg",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8085/api/user",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1536032458332,
+			"name": "GET - altera usuario",
+			"description": "",
+			"collectionId": "38574633-b29d-6b3c-27d6-472106a81423",
+			"responses": [],
+			"rawModeData": " {\n        \"id\": \"5b8dfb94d897567469527632\",\n        \"email\": \"novo@agora.com.alterado.com\",\n        \"password\": \"456\",\n        \"profile\": \"ROLE_ADMIN\"\n    }"
+		},
+		{
+			"id": "20d352c9-3200-9844-a39a-57bf4ab7f563",
+			"headers": "Content-Type: application/json\nAuthorization: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjdXN0b21lcjFAaGVscGRlc2suY29tIiwiY3JlYXRlZCI6MTUzNjM2MDY4Mzg0MywiZXhwIjoxNTM2OTY1NDgzfQ.o7ToiDkne7CTFdIe_RNvE-VAMwr2H49eOdi8dTIMKDO_I3MOcxP2NTvhVXEILtsTeZbjNfeC2cgK_iYrtnDpAg\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjdXN0b21lcjFAaGVscGRlc2suY29tIiwiY3JlYXRlZCI6MTUzNjM2MDY4Mzg0MywiZXhwIjoxNTM2OTY1NDgzfQ.o7ToiDkne7CTFdIe_RNvE-VAMwr2H49eOdi8dTIMKDO_I3MOcxP2NTvhVXEILtsTeZbjNfeC2cgK_iYrtnDpAg",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8085/api/ticket/summary",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1536368938519,
+			"name": "GET - CUSTOMER - Consulta Summary",
+			"description": "",
+			"collectionId": "38574633-b29d-6b3c-27d6-472106a81423",
+			"responses": [],
+			"rawModeData": ""
+		},
+		{
+			"id": "3315c755-3f51-a9e4-0f84-6a4f107f766d",
+			"headers": "Content-Type: application/json\nAuthorization: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjdXN0b21lcjFAaGVscGRlc2suY29tIiwiY3JlYXRlZCI6MTUzNjM2MDY4Mzg0MywiZXhwIjoxNTM2OTY1NDgzfQ.o7ToiDkne7CTFdIe_RNvE-VAMwr2H49eOdi8dTIMKDO_I3MOcxP2NTvhVXEILtsTeZbjNfeC2cgK_iYrtnDpAg\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjdXN0b21lcjFAaGVscGRlc2suY29tIiwiY3JlYXRlZCI6MTUzNjM2MDY4Mzg0MywiZXhwIjoxNTM2OTY1NDgzfQ.o7ToiDkne7CTFdIe_RNvE-VAMwr2H49eOdi8dTIMKDO_I3MOcxP2NTvhVXEILtsTeZbjNfeC2cgK_iYrtnDpAg",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8085/api/ticket/5b9311718cc69a50d99931e9/Resolved",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1536368656587,
+			"name": "PUT - CUSTOMER - Altera o status do Ticket",
+			"description": "",
+			"collectionId": "38574633-b29d-6b3c-27d6-472106a81423",
+			"responses": [],
+			"rawModeData": ""
+		},
+		{
+			"id": "3ee361a9-a1e9-287e-0b08-935b928cef99",
+			"headers": "Authorization: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwZWdhdG9rZW5AaGVscGRlc2suY29tIiwiY3JlYXRlZCI6MTUzNjAzMTM5MzgyMSwiZXhwIjoxNTM2NjM2MTkzfQ.Fw1aYQmwAgtrYKBYr4pTJB4kbVh9P6aNRKO1vgr8fPEaH5tx5aoZArrtrxYre3Koya6ZdjUFtuIZFVqhWruTgg\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwZWdhdG9rZW5AaGVscGRlc2suY29tIiwiY3JlYXRlZCI6MTUzNjAzMTM5MzgyMSwiZXhwIjoxNTM2NjM2MTkzfQ.Fw1aYQmwAgtrYKBYr4pTJB4kbVh9P6aNRKO1vgr8fPEaH5tx5aoZArrtrxYre3Koya6ZdjUFtuIZFVqhWruTgg",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8085/api/user",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1536360983299,
+			"name": "POST - cadastra usuario",
+			"description": "",
+			"collectionId": "38574633-b29d-6b3c-27d6-472106a81423",
+			"responses": [],
+			"rawModeData": "{\n\t\"email\": \"technician1@helpdesk.com\",\n\t\"password\": \"123\",\n\t\"profile\":\"ROLE_TECHNICIAN\"\n}\n\n\n\n\n\n\n\n/*\n\n{\n\t\"email\": \"customer1@helpdesk.com\",\n\t\"password\": \"123\",\n\t\"profile\":\"ROLE_CUSTOMER\"\n}\n\n{\n\t\"email\": \"novo@agora.com\",\n\t\"password\": \"123\",\n\t\"profile\":\"ROLE_ADMIN\"\n}\n*/"
+		},
+		{
+			"id": "4e0876f2-66c1-68e2-4b5f-a0f0cfd37324",
+			"headers": "Authorization: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwZWdhdG9rZW5AaGVscGRlc2suY29tIiwiY3JlYXRlZCI6MTUzNjAzMjExMjQzMCwiZXhwIjoxNTM2NjM2OTEyfQ.rL3102HPyR5zCLUHCsH8SjbFqGTAQ9tCK7qMH__DxbD5bqMY9_bxfUrJ9ead68e1cpOfm9-ik4x4nsbPYP2dgA\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwZWdhdG9rZW5AaGVscGRlc2suY29tIiwiY3JlYXRlZCI6MTUzNjAzMjExMjQzMCwiZXhwIjoxNTM2NjM2OTEyfQ.rL3102HPyR5zCLUHCsH8SjbFqGTAQ9tCK7qMH__DxbD5bqMY9_bxfUrJ9ead68e1cpOfm9-ik4x4nsbPYP2dgA",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8085/api/user/0/20",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1536032917282,
+			"name": "GET - consulta todos usuarios PAGINADA",
+			"description": "",
+			"collectionId": "38574633-b29d-6b3c-27d6-472106a81423",
+			"responses": []
+		},
+		{
+			"id": "6317f382-bcee-c48a-45ef-86b944b562a0",
+			"headers": "Content-Type: application/json\nAuthorization: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjdXN0b21lcjFAaGVscGRlc2suY29tIiwiY3JlYXRlZCI6MTUzNjM2MDY4Mzg0MywiZXhwIjoxNTM2OTY1NDgzfQ.o7ToiDkne7CTFdIe_RNvE-VAMwr2H49eOdi8dTIMKDO_I3MOcxP2NTvhVXEILtsTeZbjNfeC2cgK_iYrtnDpAg\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjdXN0b21lcjFAaGVscGRlc2suY29tIiwiY3JlYXRlZCI6MTUzNjM2MDY4Mzg0MywiZXhwIjoxNTM2OTY1NDgzfQ.o7ToiDkne7CTFdIe_RNvE-VAMwr2H49eOdi8dTIMKDO_I3MOcxP2NTvhVXEILtsTeZbjNfeC2cgK_iYrtnDpAg",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8085/api/ticket/5b93063e8cc69a3addd5b9b0",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1536364808253,
+			"name": "DELETE - CUSTOMER - Remove Ticket por Id",
+			"description": "",
+			"collectionId": "38574633-b29d-6b3c-27d6-472106a81423",
+			"responses": [],
+			"rawModeData": ""
+		},
+		{
+			"id": "7c1cc857-2f5c-0098-9a05-0d8af559e44a",
+			"headers": "Content-Type: application/json\nAuthorization: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjdXN0b21lcjFAaGVscGRlc2suY29tIiwiY3JlYXRlZCI6MTUzNjM2MDY4Mzg0MywiZXhwIjoxNTM2OTY1NDgzfQ.o7ToiDkne7CTFdIe_RNvE-VAMwr2H49eOdi8dTIMKDO_I3MOcxP2NTvhVXEILtsTeZbjNfeC2cgK_iYrtnDpAg\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjdXN0b21lcjFAaGVscGRlc2suY29tIiwiY3JlYXRlZCI6MTUzNjM2MDY4Mzg0MywiZXhwIjoxNTM2OTY1NDgzfQ.o7ToiDkne7CTFdIe_RNvE-VAMwr2H49eOdi8dTIMKDO_I3MOcxP2NTvhVXEILtsTeZbjNfeC2cgK_iYrtnDpAg",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8085/api/ticket",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1536362168001,
+			"name": "POST - CUSTOMER - Cadastra Ticket",
+			"description": "",
+			"collectionId": "38574633-b29d-6b3c-27d6-472106a81423",
+			"responses": [],
+			"rawModeData": "{\n\t\"title\":\"Ticket 1\",\n\t\"priority\": \"Normal\",\n\t\"description\": \"Descrição\",\n\t\"image\": \"byte image\"\n}"
+		},
+		{
+			"id": "80d56e27-0f21-f38d-d91b-aa670705072a",
+			"headers": "Content-Type: application/json\nAuthorization: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwZWdhdG9rZW5AaGVscGRlc2suY29tIiwiY3JlYXRlZCI6MTUzNjAzMTM5MzgyMSwiZXhwIjoxNTM2NjM2MTkzfQ.Fw1aYQmwAgtrYKBYr4pTJB4kbVh9P6aNRKO1vgr8fPEaH5tx5aoZArrtrxYre3Koya6ZdjUFtuIZFVqhWruTgg\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwZWdhdG9rZW5AaGVscGRlc2suY29tIiwiY3JlYXRlZCI6MTUzNjAzMTM5MzgyMSwiZXhwIjoxNTM2NjM2MTkzfQ.Fw1aYQmwAgtrYKBYr4pTJB4kbVh9P6aNRKO1vgr8fPEaH5tx5aoZArrtrxYre3Koya6ZdjUFtuIZFVqhWruTgg",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8085/api/user/5b8dfb94d897567469527632",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1536032561227,
+			"name": "DELETE - remove usuario",
+			"description": "",
+			"collectionId": "38574633-b29d-6b3c-27d6-472106a81423",
+			"responses": [],
+			"rawModeData": " {\n        \"id\": \"5b8dfb94d897567469527632\",\n        \"email\": \"novo@agora.com.alterado.com\",\n        \"password\": \"456\",\n        \"profile\": \"ROLE_ADMIN\"\n    }"
+		},
+		{
+			"id": "901f38b4-a354-8e58-335f-095718d92a11",
+			"headers": "Content-Type: application/json\nAuthorization: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjdXN0b21lcjFAaGVscGRlc2suY29tIiwiY3JlYXRlZCI6MTUzNjM2MDY4Mzg0MywiZXhwIjoxNTM2OTY1NDgzfQ.o7ToiDkne7CTFdIe_RNvE-VAMwr2H49eOdi8dTIMKDO_I3MOcxP2NTvhVXEILtsTeZbjNfeC2cgK_iYrtnDpAg\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjdXN0b21lcjFAaGVscGRlc2suY29tIiwiY3JlYXRlZCI6MTUzNjM2MDY4Mzg0MywiZXhwIjoxNTM2OTY1NDgzfQ.o7ToiDkne7CTFdIe_RNvE-VAMwr2H49eOdi8dTIMKDO_I3MOcxP2NTvhVXEILtsTeZbjNfeC2cgK_iYrtnDpAg",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8085/api/ticket/0/3/0/Ticket/Resolved/Normal/false",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1536368849487,
+			"name": "GET - CUSTOMER - Consulta Tickets paginado por parametros 0 10 ",
+			"description": "",
+			"collectionId": "38574633-b29d-6b3c-27d6-472106a81423",
+			"responses": [],
+			"rawModeData": ""
+		},
+		{
+			"id": "c14a39f6-b3ba-38ae-3136-8983f53b4031",
+			"headers": "Content-Type: application/json\nAuthorization: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjdXN0b21lcjFAaGVscGRlc2suY29tIiwiY3JlYXRlZCI6MTUzNjM2MDY4Mzg0MywiZXhwIjoxNTM2OTY1NDgzfQ.o7ToiDkne7CTFdIe_RNvE-VAMwr2H49eOdi8dTIMKDO_I3MOcxP2NTvhVXEILtsTeZbjNfeC2cgK_iYrtnDpAg\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjdXN0b21lcjFAaGVscGRlc2suY29tIiwiY3JlYXRlZCI6MTUzNjM2MDY4Mzg0MywiZXhwIjoxNTM2OTY1NDgzfQ.o7ToiDkne7CTFdIe_RNvE-VAMwr2H49eOdi8dTIMKDO_I3MOcxP2NTvhVXEILtsTeZbjNfeC2cgK_iYrtnDpAg",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8085/api/ticket",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1536362510453,
+			"name": "PUT - CUSTOMER - Altera Ticket",
+			"description": "",
+			"collectionId": "38574633-b29d-6b3c-27d6-472106a81423",
+			"responses": [],
+			"rawModeData": "{\n\t\"id\": \"5b93063e8cc69a3addd5b9b0\",\n\t\"title\": \"Ticket 1 alterado\",\n\t\"priority\": \"Normal\",\n\t\"description\": \"Descrição alterada\",\n\t\"image\": \"byte image alterado\"\n}"
+		},
+		{
+			"id": "d1ef2753-9031-f142-0717-29e46ca2299c",
+			"headers": "Content-Type: application/json\nAuthorization: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZWNobmljaWFuMUBoZWxwZGVzay5jb20iLCJjcmVhdGVkIjoxNTM2MzYxMDQ2OTc2LCJleHAiOjE1MzY5NjU4NDZ9.mmROc0FkMIStbZ7elICvnLhwWekMB32izYGgp78iiJRo3-9Sf3N57CoYLYkeLdCrZ2qN8tn7d5cBHH4vW5-6MA\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZWNobmljaWFuMUBoZWxwZGVzay5jb20iLCJjcmVhdGVkIjoxNTM2MzYxMDQ2OTc2LCJleHAiOjE1MzY5NjU4NDZ9.mmROc0FkMIStbZ7elICvnLhwWekMB32izYGgp78iiJRo3-9Sf3N57CoYLYkeLdCrZ2qN8tn7d5cBHH4vW5-6MA",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8085/api/ticket",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1536361100900,
+			"name": "POST - TECHNICIAN - Cadastra Ticket",
+			"description": "",
+			"collectionId": "38574633-b29d-6b3c-27d6-472106a81423",
+			"responses": [],
+			"rawModeData": "{\n\t\"title\":\"Ticket 1\",\n\t\"priority\": \"Normal\",\n\t\"description\": \"Descrição\",\n\t\"image\": \"byte image\"\n}"
+		},
+		{
+			"id": "e2c89ca4-d17e-5c7c-b1ae-e0a097be1769",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8085/api/auth",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1536361044952,
+			"name": "POST - Pega Token",
+			"description": "",
+			"collectionId": "38574633-b29d-6b3c-27d6-472106a81423",
+			"responses": [],
+			"rawModeData": "{\n\t\"email\":\"technician1@helpdesk.com\",\n\t\"password\": \"123\"\n}\n\n/*\n\n{\n\t\"email\":\"customer1@helpdesk.com\",\n\t\"password\": \"123\"\n}\n\n{\n\t\"email\":\"pegatoken@helpdesk.com\",\n\t\"password\": \"senha\"\n}\n*/"
+		},
+		{
+			"id": "f7fb8312-5f18-ea18-a41c-7da3a275bd6f",
+			"headers": "Authorization: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwZWdhdG9rZW5AaGVscGRlc2suY29tIiwiY3JlYXRlZCI6MTUzNjAzMjExMjQzMCwiZXhwIjoxNTM2NjM2OTEyfQ.rL3102HPyR5zCLUHCsH8SjbFqGTAQ9tCK7qMH__DxbD5bqMY9_bxfUrJ9ead68e1cpOfm9-ik4x4nsbPYP2dgA\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwZWdhdG9rZW5AaGVscGRlc2suY29tIiwiY3JlYXRlZCI6MTUzNjAzMjExMjQzMCwiZXhwIjoxNTM2NjM2OTEyfQ.rL3102HPyR5zCLUHCsH8SjbFqGTAQ9tCK7qMH__DxbD5bqMY9_bxfUrJ9ead68e1cpOfm9-ik4x4nsbPYP2dgA",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8085/api/user/5b8dfb94d897567469527632",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1536032323266,
+			"name": "GET - consulta usuario por Id",
+			"description": "",
+			"collectionId": "38574633-b29d-6b3c-27d6-472106a81423",
+			"responses": []
+		},
+		{
+			"id": "f943cf47-a984-a99e-03a9-409211c93dbe",
+			"headers": "Content-Type: application/json\nAuthorization: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjdXN0b21lcjFAaGVscGRlc2suY29tIiwiY3JlYXRlZCI6MTUzNjM2MDY4Mzg0MywiZXhwIjoxNTM2OTY1NDgzfQ.o7ToiDkne7CTFdIe_RNvE-VAMwr2H49eOdi8dTIMKDO_I3MOcxP2NTvhVXEILtsTeZbjNfeC2cgK_iYrtnDpAg\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjdXN0b21lcjFAaGVscGRlc2suY29tIiwiY3JlYXRlZCI6MTUzNjM2MDY4Mzg0MywiZXhwIjoxNTM2OTY1NDgzfQ.o7ToiDkne7CTFdIe_RNvE-VAMwr2H49eOdi8dTIMKDO_I3MOcxP2NTvhVXEILtsTeZbjNfeC2cgK_iYrtnDpAg",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8085/api/ticket/5b93063e8cc69a3addd5b9b0",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1536364930285,
+			"name": "GET - CUSTOMER - Consulta Ticket por Id",
+			"description": "",
+			"collectionId": "38574633-b29d-6b3c-27d6-472106a81423",
+			"responses": [],
+			"rawModeData": ""
+		}
+	]
+}
