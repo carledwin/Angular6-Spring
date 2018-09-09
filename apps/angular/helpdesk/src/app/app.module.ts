@@ -11,8 +11,6 @@ import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/security/login/login.component';
 import { routes } from './api.routes';
 import { UserService } from './services/user.service';
-import { AuthGuard } from './components/security/auth.guard';
-import { AuthInterceptor } from './components/security/auth.interceptor';
 
 @NgModule({
   declarations: [
@@ -32,12 +30,7 @@ import { AuthInterceptor } from './components/security/auth.interceptor';
   providers: [
     UserService,
     SharedService,
-    AuthGuard,
-    {
-      provide: HTTP_INTERCEPTORS,
-      useClass: AuthInterceptor,
-      multi: true
-    }
+   
   ],
   bootstrap: [AppComponent]
 })

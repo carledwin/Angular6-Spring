@@ -1,7 +1,9 @@
 import { Injectable, EventEmitter } from '@angular/core';
 import { User } from '../model/user.model';
 
-@Injectable()
+@Injectable({
+  providedIn: 'root'
+})
 export class SharedService {
 
   public static instance: SharedService = null;

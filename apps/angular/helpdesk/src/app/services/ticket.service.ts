@@ -4,7 +4,9 @@ import { Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import { tick } from '@angular/core/testing';
 
-@Injectable()
+@Injectable({
+  providedIn: 'root'
+})
 export class TicketService {
 
   constructor(private httpClient: HttpClient) { }
