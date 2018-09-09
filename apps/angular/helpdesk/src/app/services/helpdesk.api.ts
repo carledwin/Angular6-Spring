@@ -1,0 +1,1 @@
+export const HELP_DESC_API = 'http://localhost:8085';
