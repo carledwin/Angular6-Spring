@@ -29,10 +29,10 @@ export class UserService {
   }
 
   findById(id: string){
-    return this.httpClient.get(`${HELP_DESC_API}/${id}`);
+    return this.httpClient.get(`${HELP_DESC_API}/api/user/${id}`);
   }
 
   deleteById(id: string){
-    return this.httpClient.delete(`${HELP_DESC_API}/${id}`);
+    return this.httpClient.delete(`${HELP_DESC_API}/api/user/${id}`);
   }
 }

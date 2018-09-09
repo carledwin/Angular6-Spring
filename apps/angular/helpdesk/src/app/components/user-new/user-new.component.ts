@@ -28,7 +28,7 @@ export class UserNewComponent implements OnInit {
     }
 
   ngOnInit() {
-    
+    // este id sera capturado do parametro do navigate
     let id: string = this.route.snapshot.params['id'];
 
     if(id != undefined){
