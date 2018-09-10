@@ -19,6 +19,8 @@ import { DialogService } from './dialog.service';
 import { UserNewComponent } from './components/user-new/user-new.component';
 import { TicketNewComponent } from './components/ticket-new/ticket-new.component';
 import { TicketService } from './services/ticket.service';
+import { TicketListComponent } from './components/ticket-list/ticket-list.component';
+import { TicketDetailComponent } from './components/ticket-detail/ticket-detail.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { TicketService } from './services/ticket.service';
     LoginComponent,
     UserNewComponent,
     UserListComponent,
-    TicketNewComponent
+    TicketNewComponent,
+    TicketListComponent,
+    TicketDetailComponent
   ],
   imports: [
     BrowserModule,

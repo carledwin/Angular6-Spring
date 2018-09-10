@@ -75,10 +75,10 @@ export class UserListComponent implements OnInit {
                             });
 
                             this.findAll(this.page, this.count);
-                          }, error => {
+                          }, err => {
                             this.showMessage({
                               type: 'error',
-                              text: error['error']['errors'][0]
+                              text: err['error']['errors'][0]
                             });
                           });  
                         }
@@ -89,10 +89,10 @@ export class UserListComponent implements OnInit {
     this.userService.findAll(page, count).subscribe((responseApi: ResponseApi) => {
                                                       this.listUser = responseApi['data']['content'];
                                                       this.pages = new Array(responseApi['data']['totalPages']);
-                                                    }, error => {
+                                                    }, err => {
                                                       this.showMessage({
                                                         type: 'error',
-                                                        text: error['error']['errors'][0]
+                                                        text: err['error']['errors'][0]
                                                       });
                                                     });
   }

@@ -77,10 +77,10 @@ export class UserNewComponent implements OnInit {
           type: 'success',
           text: `Registered ${userResponse.email} succesfully`
         });
-      }, error =>{
+      }, err =>{
         this.showMessage({
           type: 'error',
-          text: ['error']['errors'][0]
+          text: err['error']['errors'][0]
         });
       });
   }

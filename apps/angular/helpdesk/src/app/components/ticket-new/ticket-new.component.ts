@@ -44,10 +44,10 @@ export class TicketNewComponent implements OnInit {
       this.ticket = responseApi.data;
       this.ticket.title = '';
       }
-      , error =>{
+      , err =>{
         this.showMessage({
           type: 'error',
-          text: error['error']['errors'][0]
+          text: err['error']['errors'][0]
         });
       });
     }
@@ -88,10 +88,10 @@ export class TicketNewComponent implements OnInit {
           type: 'success',
           text: `Registered ${ticketResponse.title} succesfully`
         });
-      }, error =>{
+      }, err =>{
         this.showMessage({
           type: 'error',
-          text: ['error']['errors'][0]
+          text: err['error']['errors'][0]
         });
       });
   }

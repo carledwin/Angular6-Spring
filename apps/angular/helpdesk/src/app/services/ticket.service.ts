@@ -31,21 +31,21 @@ export class TicketService {
     return this.httpClient.get(`${HELP_DESC_API}/api/ticket/${id}`);
   }
 
-  delete(id: string){
+  deleteById(id: string){
     return this.httpClient.delete(`${HELP_DESC_API}/api/ticket/${id}`);
   }
 
   findByParameters(page: number, count: number, assignedToMe: string, ticket: Ticket){
     ticket.number = ticket.number == null ? 0 : ticket.number;
-    ticket.title = ticket.title == null ? 'uninformed' : ticket.title;
-    ticket.status = ticket.status == null ? 'uninformed' : ticket.status;
-    ticket.priority = ticket.priority == null ? 'priority' : ticket.priority;
+    ticket.title = ticket.title == '' ? 'uninformed' : ticket.title;
+    ticket.status = ticket.status == '' ? 'uninformed' : ticket.status;
+    ticket.priority = ticket.priority == '' ? 'priority' : ticket.priority;
     
-    return this.httpClient.get(`${HELP_DESC_API}/api/ticket/${page}/${count}/${ticket.title}/${ticket.status}/${ticket.priority}/${assignedToMe}`);
+    return this.httpClient.get(`${HELP_DESC_API}/api/ticket/${page}/${count}/${ticket.number}/${ticket.title}/${ticket.status}/${ticket.priority}/${assignedToMe}`);
   }
 
   changeStatus(status: string, ticket: Ticket){
-    return this.httpClient.put(`${HELP_DESC_API}/api/ticket/${ticket.id}/${ticket.status}`, ticket);
+    return this.httpClient.put(`${HELP_DESC_API}/api/ticket/${ticket.id}/${status}`, ticket);
   }
 
   summery(){

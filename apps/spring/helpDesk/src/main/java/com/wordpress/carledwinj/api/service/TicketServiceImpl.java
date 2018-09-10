@@ -52,13 +52,13 @@ public class TicketServiceImpl implements TicketService {
 
 	public Page<Ticket> findByParameters(int page, int count, String title, String status, String priority) {
 		Pageable pageable = new PageRequest(page, count);
-		return this.ticketRepository.findByTitleIgnoreCaseContainingAndStatusAndPriorityOrderByDateDesc(title, status, priority, pageable);
+		return this.ticketRepository.findByTitleIgnoreCaseContainingAndStatusContainingAndPriorityContainingOrderByDateDesc(title, status, priority, pageable);
 	}
 
 	public Page<Ticket> findByParametersAndCurrentUser(int page, int count, String title, String status,
 			String priority, String userId) {
 		Pageable pageable = new PageRequest(page, count);
-		return this.ticketRepository.findByTitleIgnoreCaseContainingAndStatusAndPriorityAndUserIdOrderByDateDesc(title, status, priority, userId, pageable);
+		return this.ticketRepository.findByTitleIgnoreCaseContainingAndStatusContainingAndPriorityContainingAndUserIdOrderByDateDesc(title, status, priority, userId, pageable);
 	}
 
 	public Page<Ticket> findByNumber(int page, int count, Integer number) {
@@ -73,7 +73,7 @@ public class TicketServiceImpl implements TicketService {
 	public Page<Ticket> findByParametersAndAssignedUser(int page, int count, String title, String status,
 			String priority, String assignedUser) {
 		Pageable pageable = new PageRequest(page, count);
-		return this.ticketRepository.findByTitleIgnoreCaseContainingAndStatusAndPriorityAndAssignedUserIdOrderByDateDesc(title, status, priority, assignedUser, pageable);
+		return this.ticketRepository.findByTitleIgnoreCaseContainingAndStatusContainingAndPriorityContainingAndAssignedUserIdOrderByDateDesc(title, status, priority, assignedUser, pageable);
 	}
 
 }
