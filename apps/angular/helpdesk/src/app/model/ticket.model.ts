@@ -8,7 +8,7 @@ export class Ticket{
         public title: string,
         public status: string,
         public priority: string,
-        public image: string,
+        public image: string | ArrayBuffer,
         public user: User,
         public assignedUser: User,
         public date: string,

@@ -51,7 +51,7 @@ public class AuthenticationRestController {
 		
 		final User user = userService.findByEmail(jwtAuthenticationRequest.getEmail());
 		
-		user.setEmail(null);
+		user.setPassword(null);
 		
 		return ResponseEntity.ok(new CurrentUser(token, user));
 	}
