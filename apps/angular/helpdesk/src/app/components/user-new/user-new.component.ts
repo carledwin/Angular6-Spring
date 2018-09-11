@@ -41,10 +41,10 @@ export class UserNewComponent implements OnInit {
       this.user = responseApi.data;
       this.user.password = '';
       }
-      , error =>{
+      , err =>{
         this.showMessage({
           type: 'error',
-          text: error['error']['errors'][0]
+          text: err['error']['errors'][0]
         });
       });
     }
